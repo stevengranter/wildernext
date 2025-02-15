@@ -1,13 +1,16 @@
+export interface CardProps {
+    flipped?: boolean
+    label: string
+}
 
-
-
-export function Card({flipped,label}:{flipped:boolean,label:string}    ) {
-    return(
-        <div>
-        Card
-        <div>Flipped: {flipped}
-            <div>Label: {label}</div>
+export function Card({ flipped = false, label, ...props }: CardProps) {
+    return (
+        <div {...props}>
+            Card
+            <div>
+                Flipped: {flipped}
+                <div>Label: {label}</div>
+            </div>
         </div>
-    </div>
     )
 }
