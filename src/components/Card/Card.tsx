@@ -27,7 +27,7 @@ export function Card({ flipped = false, title = 'Title', children }: Props) {
                 </a>
                 <div className="p-5">
                     <a href="#">
-                        <h5 className="mb-2 text-xl font-bold text-gray-900 dark:text-white">
+                        <h5 className="mb-2 text-xl font-bold text-gray-900 dark:text-pink-700">
                             {title}
                         </h5>
                     </a>
