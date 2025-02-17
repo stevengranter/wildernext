@@ -1,11 +1,3 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-/* noinspection CssInvalidAtRule */
-/* @custom-variant dark (&:is(.dark *));*/
-
-/*@theme {*/
-/*  --color-background: var(--background);*/
-/*  --color-foreground: var(--foreground);*/
-/*}*/
