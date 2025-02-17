@@ -13,6 +13,6 @@ type Story = StoryObj<typeof Card>
 export const Primary: Story = {
     args: {
         flipped: false,
-        label: 'Card',
+        title: 'Title',
     },
 }

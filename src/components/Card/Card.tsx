@@ -1,16 +1,20 @@
-export interface CardProps {
+import { PropsWithChildren } from 'react'
+
+type CardProps = {
     flipped?: boolean
-    label: string
+    title?: string
+    // children?: React.ReactNode
 }
 
-export function Card({ flipped = false, label, ...props }: CardProps) {
+type Props = PropsWithChildren<CardProps>
+
+export function Card({ flipped = false, title = 'Title', children }: Props) {
     return (
-        <div {...props}>
-            Card
-            <div className="bg-amber-50 text-amber-950 dark:bg-amber-700 dark:text-white font-extrabold text-sm leading-tight">
-                <div className="text-red-500">Flipped: {flipped}</div>
-                <div>Label: {label}</div>
-                <h1 className="m-10">Hi There</h1>
+        <div>
+            <div className="rounded-md shadow-md p-3 m-3 bg-amber-50">
+                <div>{!flipped ? 'Front' : 'Back'}</div>
+                {title && <span className="font-bold ">{title}</span>}
+                {children}
             </div>
         </div>
     )
