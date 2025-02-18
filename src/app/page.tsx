@@ -13,6 +13,7 @@ export default function Home() {
             src={logo}
             className="w-1/2 object-center mt-10 drop-shadow-xl"
             alt="WilderNest Logo"
+            priority={false}
         />
     )
 }
