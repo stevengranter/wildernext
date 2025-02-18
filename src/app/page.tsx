@@ -1,7 +1,7 @@
 import { Metadata } from 'next'
 import Image from 'next/image'
 
-import logo from '/images/logo.png'
+import logo from 'images/logo.png'
 
 export const metadata: Metadata = {
     title: 'Home | WilderNest',
