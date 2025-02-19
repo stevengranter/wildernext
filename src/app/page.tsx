@@ -9,11 +9,14 @@ export const metadata: Metadata = {
 
 export default function Home() {
     return (
-        <Image
-            src={logo}
-            className="w-1/2 object-center mt-10 drop-shadow-xl"
-            alt="WilderNest Logo"
-            priority={false}
-        />
+        <>
+            <h1>Home</h1>
+            <Image
+                src={logo}
+                className="w-1/2 object-center mt-10 drop-shadow-xl"
+                alt="WilderNest Logo"
+                priority={false}
+            />
+        </>
     )
 }
