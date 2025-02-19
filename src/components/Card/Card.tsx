@@ -16,7 +16,7 @@ export function Card({ flipped = false, title = 'Title', children }: Props) {
         'blur-sm': flipped,
     })
     return (
-        <div>
+        <>
             <div className="max-w-sm rounded-lg shadow-sm dark:bg-gray-800">
                 <a href="#">
                     <Image
@@ -34,6 +34,6 @@ export function Card({ flipped = false, title = 'Title', children }: Props) {
                     {children}
                 </div>
             </div>
-        </div>
+        </>
     )
 }
